@@ -1,0 +1,13 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+	(async () => {
+		try{
+			const result = await axios.get(`https://www.zerocho.com/api/search/${encodeURIComponent('노드')}`);
+			console.log(result);
+			console.log(result.data);
+		} catch (error){
+			console.error(error);
+		}
+		console.log(decodeURIComponent('%EB%85%B8%EB%93%9C'));
+	})();
+</script>
